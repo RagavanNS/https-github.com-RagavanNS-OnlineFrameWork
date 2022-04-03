@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="framework.intro.Day10TestNGIntro"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/MavenStageENV">
+        <parameter name="chromeBrowser" value="webdriver.chrome.driver"></parameter>
+        <parameter name="BrowserPath" value="D:\chromedriver_win32\chromedriver.exe"></parameter>
+        <parameter name="URL" value="https://login-stg.awsdsi.ghx.com/login"></parameter>
+        <classes>
+            <class name="TestSTG.VendorDashboardTest"></class>
+        </classes>
+    </test>
+</suite>
